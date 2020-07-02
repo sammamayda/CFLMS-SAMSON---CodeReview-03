@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+            border-radius: 5px;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            padding: 0 10px;
+            text-align: center;
+            display: fix;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: rgb(86, 173, 28);
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        .team {
+            align-items: center;
+            text-align: center;
+            border-radius: 5px;
+            padding: 1px;
+            opacity: 0.5;
+        }
+        
+        .container1 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(./img/teamb.jpg);
+        }
+        
+        h2 {
+            color: blanchedalmond;
+        }
+        
+        p {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="team">
+            <h2><b>MEAT OUR TEAM</b></h2>
+            <p>"No member is more important than the team & no team is bigger than the Game"</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="./img/team1.jpg" class="rounded" style="width: 100%">
+                    <div class=" container ">
+                        <h2>Sam Liks</h2>
+                        <p class="title ">CEO & Founder</p>
+                        <p>Alway try and try one Day you will,.I promiss all every one is CEO of her/his self.</p>
+                        <p>sam@liks.com</p>
+                        <p><button class="button ">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column ">
+                <div class="card ">
+                    <img src="./img/team2.jpg " class="rounded " style="width:100% ">
+                    <div class="container ">
+                        <h2>Boo Links</h2>
+                        <p class="title ">Art Director</p>
+                        <p>Art is partion and doing is just Hobby, let do Art together.</p>
+                        <p>bool@liks.com</p>
+                        <p><button class="button ">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column ">
+                <div class="card ">
+                    <img src="./img/team3.jpg " class="rounded " style="width:100% ">
+                    <div class="container ">
+                        <h2>Maria Theressa</h2>
+                        <p class="title ">Designer</p>
+                        <p>The best of all Hucker and Designer in Austria.</p>
+                        <p>maria@liks.com</p>
+                        <p><button class="button ">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

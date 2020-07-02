@@ -51,9 +51,9 @@
         text-decoration: none;
         color: white;
         padding: 0px;
-        margin: 5px;
+        margin: 10px;
         font-family: sans-serif;
-        font-size: medium;
+        font-size: x-large;
     }
     
     .container-1 {
@@ -77,93 +77,80 @@
         }
     }
     
-    title {
-        color: white;
+    .title {
         padding-top: 1em;
         font-size: 1em;
         padding-left: 1em;
         margin-bottom: 1em;
+        color: white;
     }
     
-    @media (max-device-width: 480px) {
-        form {
-            margin: auto;
-        }
+    .title h1 {
+        color: #EEE;
     }
     
-    lengend {
+    .frame {
+        padding: 5%;
+        margin: 3% 12%;
+        border: 2px solid #EEE;
+        border-radius: 1em;
+        background: rgb(211, 210, 206);
+        opacity: 0.8;
+        align-items: center;
+    }
+    
+    .calculator-form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+    .calculator-form label {
+        flex-basis: 50%;
+        padding: 4.2% 6%;
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 15em;
+    }
+    
+    .calculator-form label>input {
+        width: 50%;
+        height: 2em;
+        font-size: 1em;
         margin: 0;
         padding: 0;
-        font-size: 12px;
-        color: white;
-        display: flex;
+        box-sizing: content-box;
+    }
+    
+    .calculator-form label>select {
+        width: 50%;
+        height: 2em;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    
+    .calculator-form input[type=button] {
+        flex-basis: 20em;
+        margin-top: 2em;
+        padding: 0.5em;
+        background-color: #4CAF50;
+        color: #FFF;
+        border: 1px solid #AAA;
+        border-radius: 0.5em;
+        font-size: 1em;
+    }
+    
+    .p3 {
+        align-items: center;
+    }
+    
+    .frame h3 {
         text-align: center;
-    }
-    
-    .formrow1 {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-    column {
-        margin-left: 3em;
-        margin-right: 3em;
-    }
-    
-    @media (min-device-width: 480px) and (max-device-width: 768px) {
-        Column {
-            width: 60%;
-            text-align: center;
-        }
-        Column label {
-            float: left;
-            font-size: 2em;
-        }
-    }
-    
-    @media (max-device-width: 480px) {
-        Column {
-            width: 60%;
-            text-align: center;
-        }
-        label {
-            float: left;
-            font-size: 2em;
-        }
-    }
-    
-    select {
-        width: 12em;
-        height: 2em;
-        border: 1px solid black;
-        background-color: white;
-        margin-bottom: 0.5em;
-    }
-    
-    @media (min-device-width: 480px) and (max-device-width: 768px) {
-        select {
-            width: 20em;
-            height: 2.5em;
-            font-size: 1.5em;
-        }
-    }
-    
-    @media (max-device-width: 480px) {
-        select {
-            width: 20em;
-            height: 2.5em;
-            font-size: 1.5em;
-        }
-    }
-    
-    input {
-        border: 1px solid black;
-        background-color: white;
-        width: 12em;
-        height: 2em;
-        margin-bottom: 0.5em;
+        font-size: 3em;
+        font-weight: normal;
+        padding: 0 10%;
     }
     
     @media (min-device-width: 480px) and (max-device-width: 768px) {
@@ -204,16 +191,14 @@
             width: 9em;
             font-size: 2.5em;
             padding: 0.3em;
-            color: green;
+            color: #29ba30;
         }
     }
     
     #result {
         display: inline-block;
-        margin-top: 1.5em;
-        font-size: 1.5em;
-        color: green;
         justify-content: center;
+        align-items: center;
     }
     
     .fieldset {
@@ -422,6 +407,9 @@
         color: white;
         font-family: "Noto Sans TC", sans-serif;
         font-weight: bold;
+        font-size: x-large;
+        margin-left: 5px;
+        margin-bottom: 5px;
     }
     
     footer #logo {

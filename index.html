@@ -24,64 +24,47 @@
     <nav>
         <ul>
             <a href="# ">Home</a>
-            <a href="# ">Team</a></li>
+            <a href="team.html">Team</a></li>
         </ul>
     </nav>
 
     <div class="container-1" id="main">
 
-        <div id="Title1">
-            <div class="Title">
-                <h1>Car insuarence</h1>
-            </div>
+
+        <div class="title">
+            <h1><b>Car insuarence</b></h1>
         </div>
 
-        <div class="calcWindow" id="opagewindow"></div>
-        <div class="fieldset" id="screen">
-            <div id="legend">Great coverage begins <br>with a custom quote</legend>
+        <div class="frame">
+            <h3>Great coverage begins with a custom quote</h3>
+            <form class="calculator-form">
+                <label for="fullname"><b>Your name:</b>
+                <br>
+                <input type="text" id="fullname" name="fullname"></input>
+              </label>
+                <label for="age"><b>Your age:</b>
+                <br>
+                <input type="number" id="age" name="age"></input>
+              </label>
+                <label for="country"><b>Your country:</b>
+                <br>
+                <select id="country" name="country">
+                  <option value="Austria">Austria</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Tanzania">Tanzania</option>
+                </select>
+              </label>
+                <label for="horsepower"><b>Car's horsepower:</b>
+                <br>
+                <input type="number" id="horsepower" name="horsepower"></input>
+              </label>
+                <input type="button" id="calculate" name="calculate" value="Calculate">
+            </form>
 
-                <form>
-                    <div class="formrow1">
-                        <div class="column">
-                            <label for="name">Your name:</label><br>
-                            <input type="text" id="name">
-                        </div>
-
-                        <div class="column">
-                            <label for="age">Age:</label><br>
-                            <input type="number" id="age"><br>
-                        </div>
-                    </div>
-                    <div class="formrow2">
-                        <div class="column">
-                            <label for="countries">Country:</label><br>
-                            <select name="countries" id="countries">
-                                <option value="austria ">Austria</option>
-                                <option value="hungary ">Hungary</option>
-                                <option value="greece ">Greece</option>
-                                <option value="tanzania ">Tanzania</option>
-                            </select>
-                        </div>
-                        <div class="column">
-                            <label for="horsepower ">Horspower of your car:</label><br>
-                            <input type="number " id="horsepower "> <br>
-                        </div>
-                    </div>
-
-                    <div class="formRow">
-                        <div class="Column">
-                            <button type="button " id="calculate ">Calculate</button>
-                        </div>
-                    </div>
-                    <p id="result"></p>
-
-                </form>
-            </div>
+            <p id="result"><b>Printed calculation goes here</b></p>
         </div>
 
     </div>
-
-
     <div id="box2">
         <h2>Un-complicating car coverage</h2>
         <p>Understanding your coverage options shouldn't be so hard. We'll guide you through available coverage types, starting with who and what is covered.
@@ -127,13 +110,15 @@
         <div id="menu2">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Team</a></li>
+                <li><a href="team.html">Team</a></li>
             </ul>
         </div>
         <div id="logo"><img src="./img/logo-inv.png" alt="insurance cf"></div>
         <div id="text"><span>Samson Mamayda- CodeFactory2020</span></div>
     </footer>
-
+    <!------script-->
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
